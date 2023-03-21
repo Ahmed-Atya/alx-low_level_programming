@@ -1,25 +1,34 @@
 #include <stdio.h>
-#include <stdlib.h>
+#include "main.h"
+
 /**
- * main - main block
- * Description: computes and prints the sum of all the multiples of 3 or
- * 5 below 1024 (excluded), followed by a new line
- * Return: 0
+ * print_to_98 - prints all natural numbers from n to 98,
+ * followed by a new line
+ * @n: print from this number
  */
-int main(void)
+void print_to_98(int n)
 {
-	int c = 0;
-	int sum = 0;
+	int i, j;
 
-	while (c < 1024)
+	if (n <= 98)
 	{
-		if (c % 3 == 0 || c % 5 == 0)
+		for (i = n; i <= 98; i++)
 		{
-			sum += c;
+			if (i != 98)
+				printf("%d, ", i);
+			else if (i == 98)
+				printf("%d\n", i);
 		}
-
-		c++;
+	} else if (n >= 98)
+	{
+		for (j = n; j >= 98; j--)
+		{
+			if (j != 98)
+				printf("%d, ", j);
+			else if (j == 98)
+				printf("%d\n", j);
+		}
 	}
-	printf("%i\n", sum);
-	return (0);
 }
+
+
