@@ -9,15 +9,15 @@
 int main(void)
 {
 	long int x = 612852475143;
-	long int pf;
+	long int pfact;
 
-	for (pf = 2; pf < x; pf++)
+	for ( pfact = 2;  pfact < x;  pfact++)
 	{
-		if (x % pf== 0)
+		if (x %  pfact == 0)
 		{
-			x = x / pf;
+			x = x /  pfact;
 		}
 	}
-	printf("%ld\n", pf);
+	printf("%ld\n",  pfact);
 	return (0);
 }
