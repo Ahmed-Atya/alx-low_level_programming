@@ -40,3 +40,5 @@ char *argstostr(int ac, char **av)
 		c++;
 	}
 	return (str);
+
+}
